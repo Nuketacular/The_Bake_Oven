@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get 'product', to: 'product#index', as: 'product'
   get 'about_us', to: 'about_us#index', as: 'about_us'
+  get 'contact_us', to: 'contact_us#index', as: 'contact_us'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.

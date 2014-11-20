@@ -1,0 +1,9 @@
+<div class="page">
+  <%= render 'home/header' %>
+  <% @contactus = ContactUs.first %>
+  <h1>Contact Us</h1>
+  <p><%= @contactus.phone %></p>
+  <p><%= @contactus.email %></p>
+  <p><%= @contactus.address %></p>
+  <p><%= @contactus.postal_code %></p>
+</div>

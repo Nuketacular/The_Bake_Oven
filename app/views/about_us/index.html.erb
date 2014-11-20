@@ -1,13 +1,6 @@
-<!DOCTYPE HTML>
-<html lang ="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>The Bake Oven - About Us</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="page">
-    <%= render 'home/header' %>
-    </div>
-  </body>
-</html>
+<div class="page">
+  <%= render 'home/header' %>
+  <% @aboutus = AboutUs.first %>
+  <h1><%= @aboutus.title %></h1>
+  <p><%= @aboutus.body %></p>
+</div>
