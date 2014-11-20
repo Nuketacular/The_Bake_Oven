@@ -1,0 +1,236 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #8B2500;
+}
+
+div.page {
+	width: 780px;
+	border: 3px solid black;
+	background-color: #E8C782;
+	-webkit-border-radius:17px;
+	-moz-border-radius:17px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 10px #000;
+	-moz-box-shadow:2px 2px 15px #000;
+	box-shadow:2px 2px 15px #000;
+	margin-bottom: 10px;
+	padding-bottom: 1500px; 
+}
+
+div.nav {
+	width: 770px;
+	margin-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 5px; 
+	background: #AF4035;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow:2px 2px 15px #000;
+	-moz-box-shadow:2px 2px 15px #000;
+	box-shadow:2px 2px 15px #000;
+}
+
+div.nav li a:hover {
+	color: #FCD116;
+}
+
+div.nav ul li { 
+	display:inline;
+	padding: 0px 20px;
+}
+
+div.nav ul li a{
+	color: white;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:15px;
+}
+
+div.sideBar {
+	position: fixed;
+	width: 155px;
+	margin-top: 10px;
+	margin-left: 5px;
+	background-color: #8B4500;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow:2px 2px 15px #000;
+	-moz-box-shadow:2px 2px 15px #000;
+	box-shadow:2px 2px 15px #000;
+}
+
+div.sideBar ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+div.sideBar ul li{
+	list-style-type: none;
+	text-align: center;
+	margin-right: 40px;
+	padding: 5px 0px;
+}
+
+div.sideBar li a:hover {
+	color: #FCD116;
+}
+
+
+div.pic {
+	padding-left: 27px;
+	padding-top: 15px;
+}
+
+
+h1.newsBanner{
+	float: right;
+	width: 600px;
+	margin-top: 12px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 05px;
+	background-color: #C76E06;
+	color: white;
+}
+
+h1.dealBanner{
+	float: right;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	background-color: #C48E48;
+	color: white;
+}
+
+h1.specialBanner{
+	float: right;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	background-color: #CDB38B;
+	color: white;
+}
+
+h1.itemBanner{
+	float: right;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	background-color: #CDB38B;
+	color: white;
+}
+
+div.newsContent {
+	background-color: white;
+	width: 603px;
+	height: 348px;
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+	border: solid black 1px;
+}
+
+img.newsImage1 {
+	padding-left: 41px;
+	padding-right: 30px;
+	padding-top: 15px;
+}
+
+img.newsImage2 {
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+img.newsImage3 {
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+div.dealContent {
+	background-color: white;
+	width: 603px;
+	height: 348px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	border: solid black 1px;
+}
+
+div.specialContent {
+	background-color: white;
+	width: 605px;
+	height: 100px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+div.itemContent {
+	background-color: white;
+	width: 605px;
+	height: 100px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+footer.footer p {
+	
+}
+
+
+section.about div.welcomeContent{
+	width: 740px;
+	background-color: white;
+	margin-left: 20px; 
+	padding-left: 1px;
+	padding-right: 1px; 
+	border: 1px solid black;
+}
+
+section.about div.aboutContent{
+	width: 740px;
+	background-color: white;
+	margin-left: 20px; 
+	padding-left: 1px;
+	padding-right: 1px; 
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+
+
+section.about h1, h2{
+	width: 740px;
+	margin-left: 20px;
+	padding-left: 5px;
+	color: white;
+	background-color: gray;
+}
