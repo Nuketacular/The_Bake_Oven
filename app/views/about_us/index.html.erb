@@ -1,6 +1,19 @@
+<% @aboutus = AboutUs.first %>
 <div class="page">
   <%= render 'home/header' %>
-  <% @aboutus = AboutUs.first %>
-  <h1><%= @aboutus.title %></h1>
-  <p><%= @aboutus.body %></p>
+  <section class="aboutTitle">
+    <h1 class="aboutBanner"><%= @aboutus.title %></h1>
+  </section>
+  <section class="aboutBody">
+    <p><%= @aboutus.body %></p>
+  </section>
+  <section class="aboutPic">
+    <%= image_tag("edison.jpg") %>
+  </section>
+  <footer class="aboutFoot">
+    <hr>
+    <p>
+      this is the footer
+    </p>
+  </footer>
 </div>
