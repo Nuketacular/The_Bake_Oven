@@ -20,6 +20,7 @@ body {
 	background-color: gray;
 }
 
+/*Page Container*/
 div.page {
 	width: 780px;
 	border: 3px solid black;
@@ -33,6 +34,18 @@ div.page {
 	margin-bottom: 10px;
 }
 
+/*End of page container*/
+
+/*Header picture*/
+div.pic img {
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    border-radius:17px;
+}
+
+/*End of header picture*/
+
+/*Top navigation bar*/
 div.nav {
 	width: 770px;
 	margin-left: 5px;
@@ -42,9 +55,7 @@ div.nav {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	-webkit-box-shadow:2px 2px 15px #000;
-	-moz-box-shadow:2px 2px 15px #000;
-	box-shadow:2px 2px 15px #000;
+        border: solid black 1px;
 }
 
 div.nav li a:hover {
@@ -61,9 +72,14 @@ div.nav ul li a{
 	text-decoration: none;
 	text-transform:uppercase;
 	font-weight:bold;
-	font-size:15px;
+	font-size:12pt;
 }
 
+/*End of top navigation bar*/
+
+/*Home page*/
+
+/*Sidebar*/
 div.sideBar {
 	position: fixed;
 	width: 155px;
@@ -73,39 +89,32 @@ div.sideBar {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	-webkit-box-shadow:2px 2px 15px #000;
-	-moz-box-shadow:2px 2px 15px #000;
-	box-shadow:2px 2px 15px #000;
+        border: solid black 1px;
 }
 
 div.sideBar ul li a{
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
 div.sideBar ul li{
 	list-style-type: none;
-	text-align: center;
-	margin-right: 40px;
-	padding: 5px 0px;
+        text-align: center;
+        margin-right: 35px;
+        margin-left: -5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 }
 
 div.sideBar li a:hover {
 	color: #FCD116;
 }
 
+/*End of sidebar*/
 
-div.pic img {
-    -webkit-border-radius:17px;
-    -moz-border-radius:17px;
-    border-radius:17px;
-}
-
-
-
-
+/*News Container*/
 h1.newsBanner{
 	float: right;
 	width: 600px;
@@ -113,55 +122,11 @@ h1.newsBanner{
 	margin-right: 10px;
 	margin-bottom: 0px;
 	padding-left: 05px;
-	background-color: #0B2E59;
-	color: white;
-}
-
-h1.dealBanner{
-	float: right;
-	width: 600px;
-	margin-top: 5px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	background-color: #0B2E59;
-	color: white;
-}
-
-h1.itemBanner{
-	float: right;
-	width: 600px;
-	margin-top: 5px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	background-color: #0B2E59;
+	background-color: #0B2E53;
 	color: white;
 }
 
 div.newsContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.dealContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.itemContent {
 	background-color: gray;
 	width: 603px;
 	height: 340px;
@@ -221,6 +186,59 @@ div.newsBoxContent {
     text-align: center;
 }
 
+/*End of news container*/
+
+/*Deals container*/
+h1.dealBanner{
+	float: right;
+	width: 600px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	background-color: #0B2E53;
+	color: white;
+}
+
+div.dealContent {
+	background-color: gray;
+	width: 603px;
+	height: 340px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 10px;
+        padding-top: 2px;
+	border: solid black 1px;
+}
+
+/*End of deals container*/
+
+/*Item container*/
+h1.itemBanner{
+	float: right;
+	width: 600px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	background-color: #0B2E53;
+	color: white;
+}
+
+div.itemContent {
+	background-color: gray;
+	width: 603px;
+	height: 340px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 10px;
+        padding-top: 2px;
+	border: solid black 1px;
+}
+
+/*End of item container*/
+
+/*Footer*/
 footer.footer {
     text-align: center;
     width: 600px;
@@ -229,6 +247,15 @@ footer.footer {
     padding-bottom: 25px;
 }
 
+/*End of footer*/
+
+/*End of Home Page*/
+
+
+/*About Page*/
+
+
+/*About info*/
 h1.aboutBanner {
     width: 370px;
     background-color: #0B2E59;
@@ -249,13 +276,17 @@ section.aboutBody {
     margin-right: 235px;
     margin-left: 5px;
 }
+/*End of about info*/
 
+/*About Picture*/
 section.aboutPic {
     float: right;
     margin-top: -280px;
     margin-right: 5px;
 }
+/*End of about picture*/
 
+/*About Footer*/
 footer.aboutFoot {
     text-align: center;
     width: 600px;
@@ -263,3 +294,6 @@ footer.aboutFoot {
     margin-left: 85px;
     padding-bottom: 25px;
 }
+/*End of about footer*/
+
+/*End of about page*/
