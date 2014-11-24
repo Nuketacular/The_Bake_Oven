@@ -33,60 +33,14 @@
       <section class="deals">
 	<h1 class="dealBanner"><a id="dealsLink">Deals</a></h1>
 	<div class="dealContent">
-           <div class="newsBox1">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage1">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox2">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage2">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox3">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage3">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-	</div>
+           <%= render partial: 'home_page_deals', collection: @productDeals, as: "product" %>
+        </div>
       </section>
       <section class="newItems">
         <h1 class="itemBanner"><a id="itemLink">New Items</a></h1>
 	<div class="itemContent">
-          <div class="newsBox1">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage1">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox2">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage2">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox3">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage3">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-	</div>
+          <%= render partial: 'home_page_deals', collection: @productNew, as: "product" %>
+        </div>
       </section>
       <footer class="footer">
         <%= render 'footer' %>

@@ -4,7 +4,7 @@ ActiveAdmin.register Customer do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :list, :of, :attributes, :on, :model, :name, :store_credit, :discount_amount, :email, :city, :postal_code
+  permit_params :list, :of, :attributes, :on, :model, :name, :store_credit, :discount_amount, :email, :city, :postal_code, :province_id, :address
   #
   # or
   #

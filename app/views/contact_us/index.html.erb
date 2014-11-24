@@ -1,10 +1,17 @@
 <div class="page">
   <%= render 'home/header' %>
   <% @contactus = ContactUs.first %>
-  <h1>Contact Us</h1>
-  <p><%= @contactus.phone %></p>
-  <p><%= @contactus.email %></p>
-  <p><%= @contactus.address %></p>
-  <p><%= @contactus.postal_code %></p>
-  <%= render 'home/footer' %>
+  <h1 class="contactBanner">Contact Us</h1>
+  <div class="contactContent">
+    <p><%= @contactus.phone %></p>
+    <p><%= @contactus.email %></p>
+    <p><%= @contactus.address %></p>
+    <p><%= @contactus.postal_code %></p>
+  </div>
+  <div class="storeHours">
+    <h2 class="hoursBanner">Store Hours</h2>
+  </div>
+  <footer class="contactFooter">
+    <%= render 'home/footer' %>
+  </footer>  
 </div>
