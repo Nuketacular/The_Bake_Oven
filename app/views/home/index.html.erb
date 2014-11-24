@@ -4,30 +4,7 @@
       <section class="news">
 	<h1 class="newsBanner"><a id="newsLink">News</a></h1>
 	<div class="newsContent">
-          <div class="newsBox1">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage1">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox2">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage2">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>
-          </div>
-          <div class="newsBox3">
-            <img src="http://placehold.it/150x150" alt="image 1" class="newsImage3">
-            <div class="newsBoxContent">
-              <h4>Product Name</h4>
-              <p>product Description</p>
-              <p>Product Price</p>
-            </div>          
-          </div>
+          <%= render partial: 'home_page_news', collection: @store_news, as: "store_news" %>
         </div>
       </section>
       <section class="deals">
