@@ -1,0 +1,13 @@
+<div class="page">
+  <%= render 'home/header' %>
+  <%= render 'productSide' %>
+  <section class="allProducts">
+    <h1 class="productsBanner">Products - Sale</h1>
+    <div class="productsSaleContent">
+      <%= render partial: 'sale_products', collection: @sale_products, as: "sale_products" %>
+    </div>
+  </section>
+  <footer class="productSaleFooter">
+    <%= render 'home/footer' %>
+  </footer>
+</div>

@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   root to: 'home#index'
   get 'product', to: 'product#index', as: 'product'
+  get 'bakery_product', to: 'product#bakery_products', as: 'bakery_product'
+  get 'import_product', to: 'product#import_products', as: 'import_product'
+  get 'deli_product', to: 'product#deli_products', as: 'deli_product'
+  get 'giftware_product', to: 'product#giftware_products', as: 'giftware_product'
+  get 'new_product', to: 'product#new_products', as: 'new_product'
+  get 'sale_product', to: 'product#sale_products', as: 'sale_product'
   get 'about_us', to: 'about_us#index', as: 'about_us'
   get 'contact_us', to: 'contact_us#index', as: 'contact_us'
   devise_for :admin_users, ActiveAdmin::Devise.config

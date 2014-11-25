@@ -1,0 +1,8 @@
+<div class="productsBox">
+  <%= image_tag(bakery_products.photo, class: "productsImage") %>
+    <div class="productsBoxContent">
+      <h4><%= bakery_products.name %></h4>
+      <p><%= bakery_products.desc %></p>
+      <p><%= number_to_currency(bakery_products.price) %></p>
+    </div>
+</div>

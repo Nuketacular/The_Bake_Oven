@@ -1,0 +1,13 @@
+<div class="page">
+  <%= render 'home/header' %>
+  <%= render 'productSide' %>
+  <section class="allProducts">
+    <h1 class="productsBanner">Products - Imports</h1>
+    <div class="productsImportContent">
+      <%= render partial: 'import_products', collection: @import_products, as: "import_products" %>
+    </div>
+  </section>
+  <footer class="productImportFooter">
+    <%= render 'home/footer' %>
+  </footer>
+</div>
