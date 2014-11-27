@@ -1,9 +1,9 @@
 <div class="page">
   <%= render 'home/header' %>
   <%= render 'productSide' %>
-  <section class="allProducts">
-    <h1 class="productsBanner">Products - Giftware</h1>
-    <div class="productsGiftwareContent">
+  <section class="giftwareProducts">
+    <h1 class="dataBanner">Products - Giftware</h1>
+    <div class="dataContent">
       <%= render partial: 'giftware_products', collection: @giftware_products, as: "giftware_products" %>
     </div>
   </section>

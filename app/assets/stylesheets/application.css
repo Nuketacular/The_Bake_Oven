@@ -38,24 +38,26 @@ div.page {
 
 /*Header picture*/
 div.pic img {
-    -webkit-border-radius:17px;
-    -moz-border-radius:17px;
-    border-radius:17px;
+    width: 778px;
+    margin-left: 1px;
+    -webkit-border-top-right-radius:17px;
+    -webkit-border-top-left-radius:17px;
+    -moz-border-top-right-radius:17px;
+    border-top-right-radius:17px;
+    -moz-border-top-left-radius:17px;
+    border-top-left-radius:17px;
 }
 
 /*End of header picture*/
 
 /*Top navigation bar*/
 div.nav {
-	width: 770px;
-	margin-left: 5px;
-	padding-top: 1px;
-	padding-bottom: 5px; 
+	width: 550px;
+        margin-top: -4px;
+        padding-bottom: 3px;
 	background: #989CA2;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
         border: solid black 1px;
+        float: left;
 }
 
 div.nav li a:hover {
@@ -64,12 +66,15 @@ div.nav li a:hover {
 
 div.nav ul li { 
 	display:inline;
-	padding: 0px 20px;
+	padding-left: 10px;
+        padding-right: 5px;
+        text-align: center;
 }
 
 div.nav ul li a{
 	color: white;
-	text-decoration: none;
+	list-style-type: none;
+        text-decoration: none;
 	text-transform:uppercase;
 	font-weight:bold;
 	font-size:12pt;
@@ -77,13 +82,61 @@ div.nav ul li a{
 
 /*End of top navigation bar*/
 
+
+/*CSS for displaying items pulled from database*/
+
+h1.dataBanner{
+	float: right;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	padding-left: 05px;
+	background-color: #0B2E53;
+	color: white;
+}
+
+div.dataContent {
+	background-color: gray;
+	width: 603px;
+	float: right;
+	margin-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+	border: solid black 1px;
+}
+
+img.dataImage {
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+div.dataBox {
+    background-color: white;
+    width: 195px;
+    height: 335px;
+    margin-left: 3px;
+    display: inline-block;
+    float: left;
+    border: solid black 1px;
+}
+
+div.dataBoxContent {
+    text-align: center;
+}
+
+/*end of data item display*/
+
+
 /*Home page*/
 
 /*Sidebar*/
 div.sideBar {
 	position: fixed;
 	width: 155px;
-	margin-top: 10px;
+	margin-top: 64px;
 	margin-left: 5px;
 	background-color: #989CA2;
 	-webkit-border-radius:10px;
@@ -114,101 +167,6 @@ div.sideBar li a:hover {
 
 /*End of sidebar*/
 
-/*News Container*/
-h1.newsBanner{
-	float: right;
-	width: 600px;
-	margin-top: 12px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 05px;
-	background-color: #0B2E53;
-	color: white;
-}
-
-div.newsContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-img.newsImage1 {
-    margin-left: 22px;
-    margin-top: 10px;
-    width: 150px;
-    height: 150px;
-}
-
-div.newsBox1 {
-    background-color: white;
-    width: 195px;
-    height: 335px;
-    margin-left: 3px;
-    display: inline-block;
-    float: left;
-    border: solid black 1px;
-}
-
-div.newsBoxContent {
-    text-align: center;
-}
-
-/*End of news container*/
-
-/*Deals container*/
-h1.dealBanner{
-	float: right;
-	width: 600px;
-	margin-top: 5px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	background-color: #0B2E53;
-	color: white;
-}
-
-div.dealContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-/*End of deals container*/
-
-/*Item container*/
-h1.itemBanner{
-	float: right;
-	width: 600px;
-	margin-top: 5px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	background-color: #0B2E53;
-	color: white;
-}
-
-div.itemContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-/*End of item container*/
 
 /*Footer*/
 footer.footer {
@@ -330,115 +288,6 @@ footer.contactFooter {
 /*End of Contact Us page*/
 
 /*Products Page*/
-
-h1.productsBanner{
-	float: right;
-	width: 600px;
-	margin-top: 12px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	padding-left: 05px;
-	background-color: #0B2E53;
-	color: white;
-}
-
-div.productsContent {
-	background-color: gray;
-	width: 603px;
-	height: 1350px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsBakeryContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsImportContent {
-	background-color: gray;
-	width: 603px;
-	height: 675px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsDeliContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsGiftwareContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsNewContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-div.productsSaleContent {
-	background-color: gray;
-	width: 603px;
-	height: 340px;
-	float: right;
-	margin-top: 0px;
-	margin-right: 10px;
-        padding-top: 2px;
-	border: solid black 1px;
-}
-
-img.productsImage {
-    margin-left: 22px;
-    margin-top: 10px;
-    width: 150px;
-    height: 150px;
-}
-
-div.productsBox {
-    background-color: white;
-    width: 195px;
-    height: 335px;
-    margin-left: 3px;
-    display: inline-block;
-    float: left;
-    border: solid black 1px;
-}
-
-div.productsBoxContent {
-    text-align: center;
-}
 
 footer.productFooter {
     width: 600px;

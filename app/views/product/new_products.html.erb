@@ -1,9 +1,9 @@
 <div class="page">
   <%= render 'home/header' %>
   <%= render 'productSide' %>
-  <section class="allProducts">
-    <h1 class="productsBanner">Products - New</h1>
-    <div class="productsNewContent">
+  <section class="newProducts">
+    <h1 class="dataBanner">Products - New</h1>
+    <div class="dataContent">
       <%= render partial: 'new_products', collection: @new_products, as: "new_products" %>
     </div>
   </section>
