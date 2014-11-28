@@ -1,0 +1,8 @@
+<div class="dataBox">
+  <%= image_tag(search_results.photo, class: "dataImage") %>
+    <div class="dataBoxContent">
+      <h4><%= link_to search_results.name, show_products_path(search_results) %></h4>
+      <p><%= search_results.desc %></p>
+      <p><%= number_to_currency(search_results.price) %></p>
+    </div>
+</div>

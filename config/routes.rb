@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
-  get 'products/:id', to: 'product#showProduct', as: 'show_products'
-  
+  get 'products/:id', to: 'product#show_products', as: 'show_products'
+  get 'search_results', to: 'product#search_results', as: 'search_results'
   
   
   # The priority is based upon order of creation: first created -> highest priority.

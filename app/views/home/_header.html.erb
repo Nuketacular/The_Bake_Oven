@@ -12,4 +12,10 @@
       <li><a href="#">Cart</a></li>
     </ul>
   </div>
+  <div class="searchBar">
+    <%= form_tag search_results_path, class: "searchBar", method: :get do %>
+      <%= text_field_tag :search_keywords %>
+      <%= submit_tag 'Search' %>
+    <% end %>
+  </div>
 </header>

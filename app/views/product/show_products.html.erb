@@ -1,0 +1,12 @@
+<div class="page">
+  <%= render 'home/header' %>
+  <section class="searchResults">
+    <h1 class="showBanner"><%= @show_products.name %></h1>
+    <div class="showContent">
+      <%=render 'show_product' %>
+    </div>
+  </section>
+  <footer class="footer">
+    <%= render 'home/footer' %>
+  </footer>
+</div>

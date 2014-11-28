@@ -33,10 +33,13 @@ class ProductController < ApplicationController
     @sale_products = Product.where(sale: true).page params[:page]
     @products = Product.order(:name).page params[:page]
   end
-  
+
   def show_products
-    @show_products = Product.find(params[:id]).page params[:page]
-    @products = Product.order(:name).page params[:page]
+    @show_products = Product.find(params[:id])
   end
-  
+
+  def search_results
+    wildcard_keywords = '%' + params[:search_keywords] + '%'
+    @search_results = Product.where("name LIKE ?", wildcard_keywords)
+  end
 end

@@ -5,7 +5,8 @@ class HomeController < ApplicationController
     @store_news = StoreNews.all.limit(3)
   end
   
-  def showProducts
-    @show_products = Product.find(params[:id])
+  def search_results
+    wildcard_keywords = '%' + params[:search_keywords] + '%'
+    @search_results = Product.where("name LIKE ?", wildcard_keywords)
   end
 end

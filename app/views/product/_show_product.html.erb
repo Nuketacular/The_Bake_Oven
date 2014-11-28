@@ -1,7 +1,6 @@
-<div class="dataBox">
-  <%= image_tag(show_product.photo, class: "dataImage") %>
-    <div class="dataBoxContent">
-      <h4><%= show_product.title %></h4>
-      <p><%= show_product.body %></p>
-    </div>
+<%= image_tag(@show_products.photo, class: "showImage") %>
+<div class="showBoxContent">
+  <p><%= @show_products.desc %></p>
+  <p><%= number_to_currency(@show_products.price) %></p>
+  <p><%= @show_products.stock_q %></p>
 </div>
