@@ -293,6 +293,7 @@ h1.showBanner{
 }
 
 div.showContent {
+        float: right;
 	background-color: gray;
 	width: 758px;
 	float: left;
@@ -309,11 +310,12 @@ img.showImage {
     height: 250px;
     float: left;
     margin-bottom: 10px;
+    border: solid black 1px;
 }
 
 div.showBoxContent {
     text-align: center;
-    float: right;
+    font-size: 20pt;
 }
 
 /*End of show product page*/
