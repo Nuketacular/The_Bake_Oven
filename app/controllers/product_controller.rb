@@ -40,6 +40,6 @@ class ProductController < ApplicationController
 
   def search_results
     wildcard_keywords = '%' + params[:search_keywords] + '%'
-    @search_results = Product.where("name LIKE ?", wildcard_keywords)
+    @search_results = Product.where('name LIKE ?', wildcard_keywords)
   end
 end

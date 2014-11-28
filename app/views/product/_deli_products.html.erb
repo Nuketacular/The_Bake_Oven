@@ -1,7 +1,7 @@
 <div class="dataBox">
   <%= image_tag(deli_products.photo, class: "dataImage") %>
     <div class="dataBoxContent">
-      <h4><%= deli_products.name %></h4>
+      <h4><%= link_to deli_products.name, show_products_path(deli_products) %></h4>
       <p><%= deli_products.desc %></p>
       <p><%= number_to_currency(deli_products.price) %></p>
     </div>
