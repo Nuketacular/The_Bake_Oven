@@ -129,8 +129,19 @@ div.sideBar li a:hover {
 
 div.searchBar {
     float: right;
-    margin-right: 10px;
+    margin-right: 8px;
     margin-top: 10px; 
+}
+
+input {
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    border-radius:7px;
+}
+
+input#search_keywords {
+    font-size: 12pt;
+    width: 145px;
 }
 
 /*End of search bar*/
