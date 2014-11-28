@@ -4,4 +4,8 @@ class HomeController < ApplicationController
     @product_new = Product.where(new: true).limit(3)
     @store_news = StoreNews.all.limit(3)
   end
+  
+  def showProducts
+    @show_products = Product.find(params[:id])
+  end
 end

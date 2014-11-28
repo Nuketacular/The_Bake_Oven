@@ -1,0 +1,13 @@
+<div class="page">
+  <%= render 'home/header' %>
+  <%= render 'searchSide' %>
+  <section class="searchResults">
+    <h1 class="dataBanner">Search Results</h1>
+    <div class="dataContent">
+      <%= render partial: 'show_product', collection: @show_products, as: "all_products" %>
+    </div>
+  </section>
+  <footer class="footer">
+    <%= render 'home/footer' %>
+  </footer>
+</div>

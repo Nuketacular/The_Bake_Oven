@@ -62,6 +62,9 @@ div.nav {
         border: solid black 1px;
         border-top: none; 
         float: left;
+        -webkit-border-bottom-right-radius:50px;
+	-moz-border-bottom-right-radius:50px;
+	border-bottom-right-radius:50px;
 }
 
 div.nav li a:hover {
