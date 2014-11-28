@@ -187,7 +187,12 @@ div.dataBox {
 }
 
 div.dataBoxContent {
-    text-align: center;
+    text-align: center
+}
+
+div.dataBoxContent a:link{
+    text-decoration: none;
+    color: #000;
 }
 
 /*end of data item display*/
