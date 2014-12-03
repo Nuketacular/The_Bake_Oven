@@ -114,7 +114,7 @@ div.nav ul li a{
 div.sideBar {
 	position: fixed;
 	width: 155px;
-	margin-top: 157px;
+	margin-top: 160px;
 	margin-left: 5px;
 	background-color: #989CA2;
 	-webkit-border-radius:10px;
@@ -162,9 +162,28 @@ input {
     border-radius:7px;
 }
 
+input.searchButton {
+    float: right;
+    margin-right: -65px;
+    margin-top: 20px;
+}
+
 input#search_keywords {
     font-size: 12pt;
-    width: 145px;
+    width: 135px;
+    float: left;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+select#category_id {
+   float: right;
+   margin-right: 5px;
+   margin-top: -4px;
+   width: 65px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    border-radius:7px;
 }
 
 /*End of search bar*/
