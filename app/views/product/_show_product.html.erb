@@ -7,6 +7,6 @@
   <% elsif @show_products.stock_q <=5 || @show_products.stock_q >0 then %> 
     <p class="stockLow">Amount in stock: <%= @show_products.stock_q %></p>
   <% else %>
-    <p class="noStock">Amount in stock: <%= @show_products.stock_q %></p>
+    <p class="noStock">Out of stock!</p>
   <% end %>
 </div>

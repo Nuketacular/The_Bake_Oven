@@ -1,9 +1,6 @@
 <header>
   <a id= "topLink"></a>
-  <div class="pic">
-    <%= image_tag("headerPic.jpg", class: "headerPic") %>
-  </div>
-  <div class="nav">
+    <div class="nav">
     <ul>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Products", product_path %></li>
@@ -11,6 +8,9 @@
       <li><%= link_to "Contact Us", contact_us_path %></li>
       <li><a href="#">Cart</a></li>
     </ul>
+  <div class="pic">
+    <%= image_tag("headerPic.jpg", class: "headerPic") %>
+  </div>
   </div>
   <div class="searchBar">
     <%= form_tag search_results_path, method: :get do %>
