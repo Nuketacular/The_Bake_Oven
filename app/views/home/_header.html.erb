@@ -15,7 +15,7 @@
   <div class="searchBar">
     <%= form_tag search_results_path, method: :get do %>
       <%= text_field_tag :search_keywords %>
-      <%= select_tag(:category_id, options_for_select([['All',0], ['Bakery', 1], ['Deli', 5],
+      <%= select_tag(:category_id, options_for_select([['All', 0], ['Bakery', 1], ['Deli', 5],
                                                        ['Imports', 6], ['Giftware', 7]])) %>
       <%= submit_tag 'Search', class: "searchButton" %>
     <% end %>
