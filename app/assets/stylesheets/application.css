@@ -52,9 +52,8 @@ div.page {
 /*Header picture*/
 div.pic img {
     width: 778px;
+    margin-right: 1px;
     float: right;
-    margin-top: -148px;
-    margin-right: -227px;
     border-bottom: solid black 1px;
     -webkit-border-top-right-radius:17px;
     -webkit-border-top-left-radius:17px;
@@ -72,7 +71,6 @@ div.pic img {
 div.nav {
 	width: 550px;
         height: 30px;
-        margin-top: 97px;
         padding-top: -15px;
         padding-bottom: 20px;
 	background: #989CA2;
@@ -114,7 +112,7 @@ div.nav ul li a{
 div.sideBar {
 	position: fixed;
 	width: 155px;
-	margin-top: 160px;
+	margin-top: 157px;
 	margin-left: 5px;
 	background-color: #989CA2;
 	-webkit-border-radius:10px;
@@ -153,7 +151,7 @@ div.sideBar li a:hover {
 div.searchBar {
     float: right;
     margin-right: 8px;
-    margin-top: 110px; 
+    margin-top: 10px;
 }
 
 input {
